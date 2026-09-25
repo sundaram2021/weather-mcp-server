@@ -1,0 +1,86 @@
+src/auth.ts
+  s_36fde2da646762::t_c44edd79b22107 1-28,36
+  s_36fde2da646762::t_a993331d92bef3 29-31,33-35
+src/server.ts
+  s_36fde2da646762::t_58f4a1193f58ed 7
+  s_36fde2da646762::t_2625c60aad3b32 4-6
+  s_36fde2da646762::t_f96f65641aff3f 8-10
+src/tools.ts
+  s_36fde2da646762::t_4bbcb6ff9628cf 71-77
+  s_36fde2da646762::t_95df92cfb1d84c 68-70
+  s_36fde2da646762::t_dc0ebc02917e37 78-80
+Dockerfile
+  s_fd88ed70c7a170::t_a34a870a708c2c 17
+  s_36fde2da646762::t_141312d9fee9bd 19
+  s_fd88ed70c7a170::t_7a210c936dee93 14-16
+  s_36fde2da646762::t_5c6b32af78e902 20-22
+src/mcpRouter.ts
+  s_36fde2da646762::t_81986239285843 88
+  s_36fde2da646762::t_06383827465bdf 16,61,72-73,83,91-93,97-107
+  s_fd88ed70c7a170::t_7f47cf3e5f7e15 37-53
+  s_36fde2da646762::t_a56dd3e4e2a4b8 65
+  s_36fde2da646762::t_c0d179f4727d55 13-15
+  s_36fde2da646762::t_2365de94a67ccd 62-64
+  s_36fde2da646762::t_687dcee0d0d140 66-71
+  s_36fde2da646762::t_c3ab169318e436 74-76,80-82
+  s_36fde2da646762::t_48e6a6a1ad30b9 84-87
+  s_36fde2da646762::t_d4bf94eb21cde9 89-90
+  s_36fde2da646762::t_5a5634d712f9ad 94-96
+pnpm-workspace.yaml
+  s_36fde2da646762::t_2e89c1b15eac41 2
+  s_36fde2da646762::t_7cebecb1d8b85a 1
+src/openMeteo.ts
+  s_36fde2da646762::t_85b1d0b15dc565 38-39
+  s_36fde2da646762::t_7631e644b8dd9a 57-63
+  s_36fde2da646762::t_7aef908c0427c4 81-91
+  s_36fde2da646762::t_5bf9cceebf0479 35-37
+  s_36fde2da646762::t_6ac4d877d517bd 40-42,54-56
+  s_36fde2da646762::t_86aa5fe5054513 64-66,78-80
+  s_36fde2da646762::t_f02551fb1ee754 92-94
+src/index.ts
+  s_fd88ed70c7a170::t_04ec2e0213e8b8 8,20-21
+  s_36fde2da646762::t_4cad8ee5565b21 71-80
+  s_fd88ed70c7a170::t_df6489d0a5f498 23-56
+  s_36fde2da646762::t_3a10d224093d16 3-7,9-19,67
+  s_36fde2da646762::t_e9d3670d2ffae0 1-2
+  s_fd88ed70c7a170::t_2d168deb5a5385 22
+  s_36fde2da646762::t_e8e7baf547924b 68-70
+.gitignore
+  s_36fde2da646762::t_d93f67207dab85 4-5
+  s_36fde2da646762::t_6dcfdf9cca0cb8 1-3
+README.md
+  s_fd88ed70c7a170::t_055d40ea113384 115
+  s_36fde2da646762::t_455405af5844a7 102-103
+  s_fd88ed70c7a170::t_d9d515048b177a 23-26
+  s_36fde2da646762::t_39e287ff2c1951 27
+  s_fd88ed70c7a170::t_0da4f09c3cad61 20-22
+  s_36fde2da646762::t_23bc2050f7171e 28-30,99-101
+  s_fd88ed70c7a170::t_0452554b8f3370 116-118
+src/config.ts
+  s_36fde2da646762::t_3976fe8e239c29 8-13
+  s_36fde2da646762::t_5a8c1bbe1e70f9 5-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "525f297a40e33e68a0afd1698dfecc43e0b13f9b",
+  "prompts": {},
+  "sessions": {
+    "s_36fde2da646762": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f283b0ce0ffeYEwmkEGi7105tZ",
+        "model": "unknown"
+      },
+      "human_author": "Sundaram Kumar Jha <jhasundaram@outlook.com>"
+    },
+    "s_fd88ed70c7a170": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f283b0d4cffet9iCfOEoB1CwYP",
+        "model": "unknown"
+      },
+      "human_author": "Sundaram Kumar Jha <jhasundaram@outlook.com>"
+    }
+  }
+}

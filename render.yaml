@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: weather-mcp-server
+    runtime: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /healthz
+    envVars:
+      - key: WEATHER_MCP_API_KEY
+        sync: false # set this in the Render dashboard; leave unset to run with no auth

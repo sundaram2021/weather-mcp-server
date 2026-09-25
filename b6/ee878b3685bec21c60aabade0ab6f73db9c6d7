@@ -1,0 +1,19 @@
+README.md
+  s_fd88ed70c7a170::t_ef0bdb0b728ea5 48-51,55,58,63,65,70,72,82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "b6ee878b3685bec21c60aabade0ab6f73db9c6d7",
+  "prompts": {},
+  "sessions": {
+    "s_fd88ed70c7a170": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f283b0d4cffet9iCfOEoB1CwYP",
+        "model": "unknown"
+      },
+      "human_author": "Sundaram Kumar Jha <jhasundaram@outlook.com>"
+    }
+  }
+}

@@ -45,25 +45,31 @@ Or for hot-reload during development:
 pnpm run dev
 ```
 
-### Quick manual test with curl
+### Quick manual test with curl (live server)
+
+> The deployed server has auth enabled: add `-H "Authorization: Bearer <WEATHER_MCP_API_KEY>"`
+> to every `/mcp` request below. (For local dev, swap the URL for `http://localhost:3000/mcp`.)
 
 ```bash
 # 1. Initialize a session
-curl -i -X POST http://localhost:3000/mcp \
+curl -i -X POST https://weather-mcp-server-alq9.onrender.com/mcp \
   -H "Content-Type: application/json" \
   -H "Accept: application/json, text/event-stream" \
+  -H "Authorization: Bearer <WEATHER_MCP_API_KEY>" \
   -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"test","version":"1.0"}}}'
 # -> copy the "mcp-session-id" response header value
 
 # 2. Send the required "initialized" notification
-curl -X POST http://localhost:3000/mcp \
+curl -X POST https://weather-mcp-server-alq9.onrender.com/mcp \
   -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+  -H "Authorization: Bearer <WEATHER_MCP_API_KEY>" \
   -H "mcp-session-id: <SESSION_ID>" \
   -d '{"jsonrpc":"2.0","method":"notifications/initialized"}'
 
 # 3. Call a tool
-curl -X POST http://localhost:3000/mcp \
+curl -X POST https://weather-mcp-server-alq9.onrender.com/mcp \
   -H "Content-Type: application/json" -H "Accept: application/json, text/event-stream" \
+  -H "Authorization: Bearer <WEATHER_MCP_API_KEY>" \
   -H "mcp-session-id: <SESSION_ID>" \
   -d '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"get_weather_by_location_name","arguments":{"name":"Faridabad"}}}'
 ```
@@ -73,7 +79,7 @@ curl -X POST http://localhost:3000/mcp \
 ```bash
 pnpm dlx @modelcontextprotocol/inspector
 ```
-Then point it at `http://localhost:3000/mcp` with transport type "Streamable HTTP".
+Then point it at `https://weather-mcp-server-alq9.onrender.com/mcp` with transport type "Streamable HTTP" (add your `WEATHER_MCP_API_KEY` as a `Bearer` auth header).
 
 ## Deploying to Render
 

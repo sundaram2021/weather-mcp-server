@@ -81,6 +81,19 @@ pnpm dlx @modelcontextprotocol/inspector
 ```
 Then point it at `https://weather-mcp-server-alq9.onrender.com/mcp` with transport type "Streamable HTTP" (add your `WEATHER_MCP_API_KEY` as a `Bearer` auth header).
 
+### Use it in Antigravity IDE (local)
+
+1. Start the server locally: `pnpm install && pnpm run build && pnpm start`
+   (or `pnpm run dev` for hot-reload).
+2. Open this project folder in Antigravity. It auto-discovers the workspace config
+   at `.agents/mcp_config.json`, which points at `http://localhost:3000/mcp`.
+3. In `.agents/mcp_config.json`, replace `<WEATHER_MCP_API_KEY>` with the value
+   from your local `.env` (`WEATHER_MCP_API_KEY`). If you run locally with no API
+   key set (auth disabled), delete the whole `headers` block instead.
+4. Refresh MCP servers in Antigravity (agent panel `…` > MCP Servers) — you should
+   see `weather-mcp-server` with its 3 tools. No commit of real keys: the file in
+   git keeps the placeholder.
+
 ## Deploying to Render
 
 You have two options. Both assume your code is pushed to a GitHub repo (Render deploys from git).

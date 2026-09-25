@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "weather-mcp-server": {
+      "serverUrl": "http://localhost:3000/mcp",
+      "headers": {
+        "Authorization": "Bearer <WEATHER_MCP_API_KEY>"
+      }
+    }
+  }
+}

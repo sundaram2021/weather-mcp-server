@@ -1,0 +1,21 @@
+README.md
+  s_fd88ed70c7a170::t_3031f6e228ddbd 84-96
+.agents/mcp_config.json
+  s_fd88ed70c7a170::t_87ea51fd3778f0 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "9bc9c3dac84974118ce2af7dba931e29d366c933",
+  "prompts": {},
+  "sessions": {
+    "s_fd88ed70c7a170": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f283b0d4cffet9iCfOEoB1CwYP",
+        "model": "unknown"
+      },
+      "human_author": "Sundaram Kumar Jha <jhasundaram@outlook.com>"
+    }
+  }
+}
